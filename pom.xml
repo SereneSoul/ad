@@ -32,6 +32,7 @@
         <beetlsql>2.11.0</beetlsql>
         <beetl>2.9.6</beetl>
         <druid>1.1.14</druid>
+        <fastjson>1.2.46</fastjson>
         <spring-cloud.version>Greenwich.SR1</spring-cloud.version>
     </properties>
     
@@ -49,6 +50,13 @@
 
     <dependencyManagement>
         <dependencies>
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-dependencies</artifactId>
+                <version>${spring-cloud.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
             <dependency>
                 <groupId>commons-collections</groupId>
                 <artifactId>commons-collections</artifactId>
@@ -80,11 +88,9 @@
                 <version>${druid}</version>
             </dependency>
             <dependency>
-                <groupId>org.springframework.cloud</groupId>
-                <artifactId>spring-cloud-dependencies</artifactId>
-                <version>${spring-cloud.version}</version>
-                <type>pom</type>
-                <scope>import</scope>
+                <groupId>com.alibaba</groupId>
+                <artifactId>fastjson</artifactId>
+                <version>${fastjson}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
