@@ -17,6 +17,7 @@
 
     <properties>
         <java.version>1.8</java.version>
+        <ad-common>1.0.0</ad-common>
     </properties>
     
     <modules>
@@ -25,5 +26,15 @@
         <module>ad-search</module>
         <module>ad-sponsor</module>
     </modules>
+    
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>com.ls</groupId>
+                <artifactId>ad-common</artifactId>
+                <version>${ad-common}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 
 </project>
