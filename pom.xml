@@ -33,6 +33,7 @@
         <beetl>2.9.6</beetl>
         <druid>1.1.14</druid>
         <fastjson>1.2.46</fastjson>
+        <mysql-binlog>0.20.1</mysql-binlog>
         <spring-cloud.version>Greenwich.SR1</spring-cloud.version>
     </properties>
     
@@ -91,6 +92,11 @@
                 <groupId>com.alibaba</groupId>
                 <artifactId>fastjson</artifactId>
                 <version>${fastjson}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.shyiko</groupId>
+                <artifactId>mysql-binlog-connector-java</artifactId>
+                <version>${mysql-binlog}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
