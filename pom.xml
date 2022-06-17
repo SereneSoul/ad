@@ -32,7 +32,7 @@
         <beetlsql>2.11.0</beetlsql>
         <beetl>2.9.6</beetl>
         <druid>1.1.14</druid>
-        <fastjson>1.2.46</fastjson>
+        <fastjson>1.2.83</fastjson>
         <mysql-binlog>0.20.1</mysql-binlog>
         <spring-cloud.version>Greenwich.SR1</spring-cloud.version>
     </properties>
